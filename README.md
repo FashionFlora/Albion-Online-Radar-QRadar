@@ -69,7 +69,7 @@ sudo su
 
 8. npm install
 
-9 node app.js
+9. in directory terminal type  node app.js
 
 open  http://localhost:5001 in browser
 
