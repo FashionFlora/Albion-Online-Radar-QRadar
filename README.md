@@ -1,3 +1,5 @@
+###  **Join discord: https://discord.gg/rKKVqUdP3p**
+
 ### **Free Radar  Windows and Linux for Albion Online**
 
 This is radar for albion online game which allows
