@@ -1,0 +1,226 @@
+
+<div class="h-full pb-16 overflow-y-auto">
+
+          <div class="container px-6 mx-auto grid">
+
+
+            <h2
+            class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"  >
+             Main settings
+           </h2>
+
+            <div class ="flex justify-start space-x-6">
+
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Main window Margin X </span>
+                <input
+                  id = "mainWindowMarginX"
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="X"
+                />
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Main window Margin Y </span>
+                <input
+                  id = "mainWindowMarginY"
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Y"
+                />
+              </label>
+
+
+
+          </div>
+
+
+          <h2
+          class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
+        >
+          Items window settings
+        </h2>
+
+          <div class ="flex justify-start space-x-6">
+
+
+            <label class="block text-sm">
+              <span class="text-gray-700 dark:text-gray-400">Items window Margin X</span>
+              <input
+                id = "itemsWindowMarginX"
+                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                placeholder="X"
+              />
+            </label>
+
+            <label class="block text-sm">
+              <span class="text-gray-700 dark:text-gray-400">Items window margin  Y</span>
+              <input
+                 id = "itemsWindowMarginY"
+                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                placeholder="Y"
+              />
+            </label>
+
+
+              <label class="block text-sm">
+              <span class="text-gray-700 dark:text-gray-400">Items width</span>
+              <input
+                 id = "itemsWidth"
+                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                placeholder="W"
+              />
+            </label>
+
+                    <label class="block text-sm">
+              <span class="text-gray-700 dark:text-gray-400">Items height</span>
+              <input
+                 id = "itemsHeight"
+                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                placeholder="H"
+              />
+            </label>
+
+
+            <label class="flex items-center space-x-2">
+              <input type="checkbox" id="settingItemsBorder" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+              <span class="dark:text-white ml-4">Items window border</span>
+            </label>
+
+            </div>
+
+
+
+
+          <h2
+          class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
+        >
+          Clear button settings
+        </h2>
+     
+
+
+                  <div class ="flex justify-start space-x-6">
+
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Button  Margin X </span>
+                <input
+                  id = "buttonMarginX"
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="X"
+                />
+              </label>
+
+              <label class="block text-sm">
+                <span class="text-gray-700 dark:text-gray-400">Button  Margin Y </span>
+                <input
+                  id = "buttonMarginY"
+                  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="Y"
+                />
+              </label>
+
+
+
+          </div>
+
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+  <script>
+    // Get references to the input fields and checkboxes
+    const mainWindowMarginXInput = document.getElementById("mainWindowMarginX");
+    const mainWindowMarginYInput = document.getElementById("mainWindowMarginY");
+    const itemsWindowMarginXInput = document.getElementById("itemsWindowMarginX");
+    const itemsWindowMarginYInput = document.getElementById("itemsWindowMarginY");
+    const settingItemsBorderCheckbox = document.getElementById("settingItemsBorder");
+
+    const buttonMarginXInput = document.getElementById("buttonMarginX");
+    const buttonMarginYInput = document.getElementById("buttonMarginY");
+
+    const itemsWidthInput = document.getElementById("itemsWidth");
+    const itemsHeightInput = document.getElementById("itemsHeight");
+
+    // Function to save a value to local storage
+    function saveToLocalStorage(key, value) {
+      localStorage.setItem(key, value);
+    }
+
+    // Function to retrieve a value from local storage
+    function getFromLocalStorage(key) {
+      return localStorage.getItem(key);
+    }
+
+    // Add event listeners to the input fields
+
+        itemsWidthInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("itemsWidth", value);
+    });
+
+
+        itemsHeightInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("itemsHeight", value);
+    });
+
+        buttonMarginXInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("buttonMarginX", value);
+    });
+
+
+        buttonMarginYInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("buttonMarginY", value);
+    });
+
+
+
+    mainWindowMarginXInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("mainWindowMarginX", value);
+    });
+
+    mainWindowMarginYInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("mainWindowMarginY", value);
+    });
+
+    itemsWindowMarginXInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("itemsWindowMarginX", value);
+    });
+
+    itemsWindowMarginYInput.addEventListener("input", function (event) {
+      const value = event.target.value;
+      saveToLocalStorage("itemsWindowMarginY", value);
+    });
+
+    // Add event listener to the checkbox
+    settingItemsBorderCheckbox.addEventListener("change", function (event) {
+      const isChecked = event.target.checked;
+      saveToLocalStorage("settingItemsBorder", isChecked);
+    });
+
+    // Initialize the input fields and checkboxes with values from local storage (if available)
+    mainWindowMarginXInput.value = getFromLocalStorage("mainWindowMarginX") || "";
+    mainWindowMarginYInput.value = getFromLocalStorage("mainWindowMarginY") || "";
+    itemsWindowMarginXInput.value = getFromLocalStorage("itemsWindowMarginX") || "";
+    itemsWindowMarginYInput.value = getFromLocalStorage("itemsWindowMarginY") || "";
+
+    itemsWidth.value = getFromLocalStorage("itemsWidth") || "";
+    itemsHeight.value = getFromLocalStorage("itemsHeight") || "";
+
+    buttonMarginXInput.value = getFromLocalStorage("buttonMarginX") || "";
+    buttonMarginYInput.value = getFromLocalStorage("buttonMarginY") || "";
+    settingItemsBorderCheckbox.checked = getFromLocalStorage("settingItemsBorder") === "true";
+  </script>

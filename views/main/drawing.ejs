@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drawing</title>
+
+        <style>
+        body{
+            background-color: #121317;
+        }
+        
+        /* Position the canvases, with the topCanvas above the bottomCanvas */
+        #bottomCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+            border: 2px solid grey;
+        }
+        #drawCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+        }
+
+         #button {
+            position: absolute;
+            top: 10px;
+            background-color: #1a1c23;
+            color:white;
+            margin: 10px;
+            border: 1px solid gray;
+            padding: 8px 18px;
+            cursor: pointer;
+            left: 520px; /* Adjust the left position to be to the right of the canvases */
+        }
+
+        #canvasContainer {
+            position: relative;
+        }
+
+        #thirdCanvas {
+   
+            position: absolute;
+            top: 520px;
+     
+            margin: 10px;
+            bottom: 0;
+            left: 0;
+            border: 2px solid grey;
+        }
+
+    </style>
+
+</head>
+<body>
+
+      <div id="canvasContainer">
+
+        <canvas id="bottomCanvas" width="500" height="500"></canvas>
+        <canvas id="drawCanvas" width="500" height="500"></canvas>
+        <canvas id="thirdCanvas" width="500" height="500" ></canvas>
+        <button id="button">Clear</button>
+ 
+    </div>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.10/signalr.min.js" ></script>
+    <script src="/scripts/Handlers/PlayersHandler.js"></script>
+    <script src="/scripts/Handlers/HarvestablesHandler.js"></script>
+    <script src="/scripts/Handlers/MobsHandler.js"></script>
+    <script src="/scripts/Handlers/ChestsHandler.js"></script>
+    <script src="/scripts/Handlers/DungeonsHandler.js"></script>  
+    <script src="/scripts/Handlers/MobsInfo.js"></script>
+    <script src="/scripts/Handlers/ItemsInfo.js"></script>
+    <script src="/scripts/Utils/DrawingUtils.js"></script>
+    <script src="/scripts/Utils/Settings.js"></script>
+    
+    <script type = "module" src="/scripts/Utils/Utils.js"></script> 
+
+
+</body>
+</html>

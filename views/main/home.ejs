@@ -1,0 +1,165 @@
+
+      <div class="container px-6 mx-auto grid">
+          <h4
+          class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+        >
+
+        </h4>
+        <div class="grid   gap-6 mb-8 md:grid-cols-1 xl:grid-cols-1">
+          <!-- Card -->
+
+          <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+            <div>
+
+                <h4
+                class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300"
+              >
+                Players
+              </h4>
+
+
+
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id = "settingDot" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Dot</span>
+
+              </label>
+
+              <div class = "ml-4">
+
+
+
+              <label class="flex items-center space-x-2 ">
+
+                <input type="checkbox" id="settingNickname" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class=" dark:text-white ml-4">Nickname</span>
+
+              </label>
+
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id="settingHealth" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Health</span>
+
+              </label>
+
+
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id="settingMounted" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Mounted</span>
+
+              </label>
+
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id ="settingItems" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Items</span>
+
+              </label>
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id="settingItemsDev"" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Items Dev</span>
+
+              </label>
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id="settingDistance" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Distance</span>
+
+              </label>
+
+              <label class="flex items-center space-x-2">
+
+                <input type="checkbox" id="settingGuild" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Guild</span>
+
+              </label>
+
+              <label class="flex items-center space-x-2">
+
+                <input disabled type="checkbox" id="settingSound" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <span class="dark:text-white ml-4">Sound</span>
+
+              </label>
+            </div>
+            </div>
+        </div>
+
+      </div>
+      <script>
+
+           function returnLocalBool(item) {
+              if (localStorage.getItem(item) == "true") {
+                  return true;
+              }
+              else {
+                  return false;
+              }
+
+
+          }
+          let settingDot = document.getElementById("settingDot");
+          let settingNickname = document.getElementById("settingNickname");
+          let settingHealth = document.getElementById("settingHealth");
+          let settingMounted = document.getElementById("settingMounted");
+          let settingItems = document.getElementById("settingItems");
+          let settingItemsDev = document.getElementById("settingItemsDev");
+          let settingDistance = document.getElementById("settingDistance");
+          let settingGuild = document.getElementById("settingGuild");
+          let settingSound = document.getElementById("settingSound");
+
+          settingDot.checked = returnLocalBool("settingDot");
+          settingNickname.checked = returnLocalBool("settingNickname");
+          settingHealth.checked = returnLocalBool("settingHealth");
+          settingMounted.checked = returnLocalBool("settingMounted");
+          settingItems.checked =returnLocalBool("settingItems");
+          settingItemsDev.checked = returnLocalBool("settingItemsDev");
+          settingDistance.checked = returnLocalBool("settingDistance");
+          settingGuild.checked = returnLocalBool("settingGuild");
+          settingSound.checked = returnLocalBool("settingGuild");
+          settingDot.addEventListener("click", () => {
+              localStorage.setItem("settingDot", settingDot.checked);
+          });
+
+          settingNickname.addEventListener("click", () => {
+              localStorage.setItem("settingNickname", settingNickname.checked);
+          });
+
+          settingHealth.addEventListener("click", () => {
+              localStorage.setItem("settingHealth", settingHealth.checked);
+          });
+
+          settingMounted.addEventListener("click", () => {
+              localStorage.setItem("settingMounted", settingMounted.checked);
+          });
+
+          settingItems.addEventListener("click", () => {
+              localStorage.setItem("settingItems", settingItems.checked);
+          });
+
+          settingItemsDev.addEventListener("click", () => {
+              localStorage.setItem("settingItemsDev", settingItemsDev.checked);
+          });
+
+          settingDistance.addEventListener("click", () => {
+              localStorage.setItem("settingDistance", settingDistance.checked);
+          });
+          settingGuild.addEventListener("click", () => {
+              localStorage.setItem("settingGuild", settingGuild.checked);
+          });
+
+                settingSound.addEventListener("click", () => {
+              localStorage.setItem("settingSound", settingSound.checked);
+          });
+
+
+      </script>
