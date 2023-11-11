@@ -1,4 +1,4 @@
-Free Radar. windows and linux for Albion Online
+### **Free Radar  Windows and Linux for Albion Online**
 
 This is radar for albion online game which allows
 to show players and their equipments, resources mobs and more...
@@ -8,9 +8,11 @@ if you want use items
 0.https://www.mediafire.com/file/fa96b300q7ompjb/Items.rar/file
 
 
-installation video Windows + Linux :
+### **installation Video :**
 
-installation text Windows:
+
+### **installation text Windows:**
+
 
 
 1. download node v18.18.2:
@@ -46,7 +48,8 @@ and install nasm and type in cmd npm run build
 
 
 
-Installation text Linux:
+### **installation text Linux:**
+
 
 sudo su
 
