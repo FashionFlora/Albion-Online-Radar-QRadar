@@ -121,7 +121,13 @@ c.on('packet', function(nbytes, trunc) {
 	let payload = buffer.slice(ret.offset, nbytes);
 
 	// Parse the UDP payload
-	manager.handle(payload);
+	try
+	{
+	    manager.handle(payload);
+	}
+	catch{
+	    
+	}
 
 });
 
