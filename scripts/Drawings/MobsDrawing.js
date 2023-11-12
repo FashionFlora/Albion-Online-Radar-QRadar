@@ -170,7 +170,7 @@ export class MobsDrawing extends DrawingUtils {
             }
 
             
-            if (this.settings.mistSolo && mistsOne.type == 0 || this.settings.mistDuo == true && misOne.type == 1) {
+            if (this.settings.mistSolo && mistsOne.type == 0 || this.settings.mistDuo == true && mistsOne.type == 1) {
 
 
                 const point = this.transformPoint(mistsOne.hX, mistsOne.hY);
