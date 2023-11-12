@@ -10,7 +10,7 @@ if you want use items
 0.https://www.mediafire.com/file/fa96b300q7ompjb/Items.rar/file
 
 
-### **installation Video :**
+### **installation Video :** https://www.youtube.com/watch?v=_luNHJXrD5o
 
 
 ### **installation text Windows:**
