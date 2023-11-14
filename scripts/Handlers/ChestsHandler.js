@@ -33,7 +33,7 @@ class ChestsHandler {
     addChestEvent(Parameters) {
         const chestId = Parameters[0];
         const chestsPosition = Parameters[1];
-        const chestName = Parameters[3];
+        let chestName = Parameters[3];
 
         if (chestName.toLowerCase().includes("mist")) {
             chestName = Parameters[4];
