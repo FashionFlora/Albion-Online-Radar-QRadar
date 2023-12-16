@@ -62,6 +62,10 @@ class DrawingUtils {
 
 
     drawImageCustom(ctx, x, y , drawTo , size) {
+
+        if (drawTo === undefined) {
+            return;
+        }
   
 
         if(drawTo.toLowerCase().includes("undefined"))
