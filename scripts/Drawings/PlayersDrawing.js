@@ -48,6 +48,11 @@ export class PlayersDrawing extends DrawingUtils  {
 
             const items = playerOne.items;
 
+            if (items === null) {
+                continue;
+
+            } 
+
             let posX = 5;
 
 
