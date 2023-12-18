@@ -18,7 +18,7 @@ if you want use items
 
 
 1. download node v18.18.2:
-  https://nodejs.org/download/release/latest-v18.x/node-v18.18.2-x64.msi
+  nodejs.org/dist/v18.18.2/node-v18.18.2-x64.msi
 
 
 
