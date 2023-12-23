@@ -1,5 +1,5 @@
 ## ✨ Join Discord
-- Link: https://discord.gg/rKKVqUdP3p
+- https://dsc.gg/qradar
 
 ---
 
@@ -9,10 +9,12 @@ Albion QRadar provide a real-time map, aiding players in detecting other players
 ---
 ## ❓ If you want to use in game items
 
-- Link: https://www.mediafire.com/file/fa96b300q7ompjb/Items.rar/file
+- https://www.mediafire.com/file/fa96b300q7ompjb/Items.rar/file
+
+---
 
 ### Video Tutorial
-### Link: https://www.youtube.com/watch?v=_luNHJXrD5o
+### https://youtu.be/_luNHJXrD5o
 
 ---
 ## ❓ Usage (Windows)
@@ -27,6 +29,8 @@ Albion QRadar provide a real-time map, aiding players in detecting other players
 ```
 npm install --global windows-build-tools
 ```
+(It's normal to have errors, just install the 2 programs mentioned in the error)
+
 5. Install Node.js packages:
 ```
 npm install
@@ -35,6 +39,7 @@ npm install
 ```
 node app.js
 ```
+7. Open http://localhost:5001 in your browser.
 ---
 ## ❓ Usage (Linux)
 
