@@ -36,6 +36,22 @@ npm install
 node app.js
 ```
 ---
+## ❓ How to Open Radar on Your Smartphone 
+1. Connect your device to the same network as your PC
+- You need to connect your Smartphone or Laptop to the same wifi/lan as your PC.
+2. Check your IPv4 Adress
+```
+ipconfig
+```
+3. See the correct internet adapter that you use:
+- Go to Control Panel > Network and sharing center > Choose same as access type connection
+4. Go and type on your browser with this format
+```
+your_ip_connection_here:5001 ex: 192.168.19.5:5001
+```
+5. Run the adress
+- Now you can press enter and run the correct adress and see the radar on difrent device on same network
+---
 ## ❓ Usage (Linux)
 
 1. Switch to root user:

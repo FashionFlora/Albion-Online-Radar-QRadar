@@ -148,7 +148,7 @@
 				</h2>
 
 				<label class="flex items-center space-x-2">
-					<input disabled type="checkbox" id="" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+					<input type="checkbox" id="settingCorruptEnabled" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
 					<span class="dark:text-white ml-4">Enabled</span>
 				</label>
 
@@ -157,7 +157,7 @@
 				</h2>
 
 				<label class="flex items-center space-x-2">
-					<input disabled type="checkbox" id="" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+					<input type="checkbox" id="" class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
 					<span class="dark:text-white ml-4">Enabled</span>
 				</label>
 
@@ -317,6 +317,12 @@
 
 			settingDungeonE4.addEventListener("click", () => {
 				localStorage.setItem("settingDungeonE4", settingDungeonE4.checked);
+			});
+			let settingCorruptEnabled = document.getElementById("settingCorruptEnabled");
+			settingCorruptEnabled.checked = returnLocalBool("settingCorruptEnabled");
+
+			settingCorruptEnabled.addEventListener("click", () => {
+    		localStorage.setItem("settingCorruptEnabled", settingCorruptEnabled.checked);
 			});
 
 </script>

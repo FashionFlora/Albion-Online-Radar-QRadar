@@ -23,7 +23,7 @@
                       <!-- Container for the button and SVG icon -->
 
 
-                      <button @@click="isOpen = !isOpen" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="button">
+                      <button @click="isOpen = !isOpen" id="dropdownDefaultButton" data-dropdown-toggle="dropdown"  class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" type="button">
                         <div class="flex items-center">
                             <div x-text="buttonText"></div>
                             <div>
@@ -44,11 +44,11 @@
                     </button>
 
                       <!-- Dropdown menu -->
-                      <div x-show="isOpen" @@click.away="isOpen = false" class="absolute mt-2 dark:bg-gray-700  dark::text-white border border-gray-300 rounded shadow-lg" style="width: max-content;">
+                      <div x-show="isOpen" @click.away="isOpen = false" class="absolute mt-2 dark:bg-gray-700  dark::text-white border border-gray-300 rounded shadow-lg" style="width: max-content;">
                         <!-- Dropdown items -->
-                        <a href="#" class="block px-4 py-2 dark:text-gray-300 hover:bg-blue-100" style="width: 100%;" @@click="buttonText = 'Player'; isOpen = false;">Player</a>
-                        <a href="#" class="block px-4 py-2 dark:text-gray-300 hover:bg-blue-100" style="width: 100%;" @@click="buttonText = 'Guild'; isOpen = false;">Guild</a>
-                        <a href="#" class="block px-4 py-2 dark:text-gray-300 hover:bg-blue-100" style="width: 100%;" @@click="buttonText = 'Ally'; isOpen = false;">Ally</a>
+                        <a href="#" class="block px-4 py-2 dark:text-gray-300 hover:bg-blue-100" style="width: 100%;" @click="buttonText = 'Player'; isOpen = false;">Player</a>
+                        <a href="#" class="block px-4 py-2 dark:text-gray-300 hover:bg-blue-100" style="width: 100%;" @click="buttonText = 'Guild'; isOpen = false;">Guild</a>
+                        <a href="#" class="block px-4 py-2 dark:text-gray-300 hover:bg-blue-100" style="width: 100%;" @click="buttonText = 'Ally'; isOpen = false;">Ally</a>
                       </div>
                     </div>
 
